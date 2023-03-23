@@ -1,0 +1,63 @@
+@use "../abstracts/variable" as *;
+.white {
+  background-color: $whiteBG;
+  color: $black;
+  .info,
+  .about,
+  .skills {
+    background-color: $whiteBG2;
+  }
+
+  .info {
+    .text {
+      p {
+        background-color: $whiteBG;
+      }
+    }
+  }
+  .social i {
+    background-color: $whiteBG;
+    border-color: $whiteBG2;
+  }
+  .details {
+    background-color: $whiteBG;
+  }
+  .details i {
+    background-color: $whiteBG2;
+    .phone,
+    .email,
+    .location:has(i) {
+      background-color: $whiteBG2;
+    }
+  }
+
+  .about {
+    h1,
+    h2 {
+      &:hover::before {
+        color: $black;
+      }
+    }
+  }
+  .skills {
+    h2,
+    h3 {
+      &:hover::before {
+        color: $black;
+      }
+    }
+    .skill {
+      span {
+        background-color: $whiteBG;
+        color: $black;
+      }
+    }
+    .myproject {
+      .project {
+        h4 {
+          color: $black;
+        }
+      }
+    }
+  }
+}

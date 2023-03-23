@@ -1,0 +1,81 @@
+@use "../abstracts/variable" as *;
+.skills {
+  padding: 50px 20px;
+  align-self: start;
+  background-color: $black;
+  border-radius: 5px;
+  width: 90%;
+
+  h2 {
+    width: 200px;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 20px;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      top: -8px;
+      left: -5px;
+      font-size: 33px;
+      content: "My Skills";
+      -webkit-text-stroke: 1px #80808069;
+      color: transparent;
+      z-index: -1;
+    }
+    &:hover {
+      color: transparent;
+      &::before {
+        -webkit-text-stroke: 0px #80808069;
+        color: $white;
+      }
+    }
+  }
+  .skill {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      background-color: $blackBk;
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 15px;
+      color: $grey;
+    }
+  }
+  .myproject {
+    margin-top: 40px;
+    h3 {
+      width: 200px;
+      position: relative;
+      margin-bottom: 50px;
+      font-size: 20px;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        top: -8px;
+        left: -5px;
+        font-size: 33px;
+        content: "My Project";
+        -webkit-text-stroke: 1px #80808069;
+        color: transparent;
+        z-index: -2;
+      }
+      &:hover {
+        color: transparent;
+        &::before {
+          -webkit-text-stroke: 0px #80808069;
+          color: $white;
+        }
+      }
+    }
+    .project {
+      margin-top: 30px;
+      h4 {
+        color: $white;
+      }
+      a {
+        color: $grey;
+      }
+    }
+  }
+}

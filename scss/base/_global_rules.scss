@@ -1,0 +1,24 @@
+@use "../abstracts/variable" as *;
+/* ==== S global rules ==== */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.3s ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Secular One", sans-serif;
+  background-color: $blackBk;
+  color: $white;
+}
+
+
+/* ==== E global rules ==== */

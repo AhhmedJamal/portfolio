@@ -1,0 +1,44 @@
+.white {
+  background-color: #d2d2d2;
+  color: #222;
+}
+.white .info,
+.white .about,
+.white .skills {
+  background-color: #afafaf;
+}
+.white .info .text p {
+  background-color: #d2d2d2;
+}
+.white .social i {
+  background-color: #d2d2d2;
+  border-color: #afafaf;
+}
+.white .details {
+  background-color: #d2d2d2;
+}
+.white .details i {
+  background-color: #afafaf;
+}
+.white .details i .phone,
+.white .details i .email,
+.white .details i .location:has(i) {
+  background-color: #afafaf;
+}
+.white .about h1:hover::before,
+.white .about h2:hover::before {
+  color: #222;
+}
+.white .skills h2:hover::before,
+.white .skills h3:hover::before {
+  color: #222;
+}
+.white .skills .skill span {
+  background-color: #d2d2d2;
+  color: #222;
+}
+.white .skills .myproject .project h4 {
+  color: #222;
+}
+
+/*# sourceMappingURL=theme.css.map */

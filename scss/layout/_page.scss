@@ -1,0 +1,33 @@
+.page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: repeat(1, 1fr);
+    .about {
+      margin-top: 20px;
+    }
+    .skills {
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .page {
+    grid-template-columns: repeat(2, 1fr);
+    .info {
+      margin: 0;
+    }
+    .about {
+      margin: 0;
+    }
+    .skills {
+      margin-top: 20px;
+      grid-column: 1/4;
+      width: 95%;
+    }
+  }
+}

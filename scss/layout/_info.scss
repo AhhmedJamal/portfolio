@@ -1,0 +1,158 @@
+@use "../abstracts/variable" as *;
+
+/* ==== S info ==== */
+%cl_rd {
+  background-color: $blackBk;
+  border-radius: 5px;
+}
+.info {
+  background-color: $black;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  position: relative;
+  border-radius: 8px;
+  height: 650px;
+  width: 90%;
+  #i {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    &:hover {
+      color: $grey;
+    }
+  }
+  #img {
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      &:hover {
+        transform: scale(1.1) rotate(-1deg);
+      }
+    }
+  }
+  .text {
+    margin-bottom: 25px;
+    text-align: center;
+    p {
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      @extend %cl_rd;
+      padding: 10px;
+
+      margin-top: 15px;
+    }
+  }
+  .social {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    i {
+      font-size: 20px;
+      @extend %cl_rd;
+      padding: 5px;
+      border: 2px solid $blackBk;
+      &:hover {
+        opacity: 0.6;
+        transform: scale(1.1);
+        border: 2px solid $grey;
+      }
+    }
+    .f {
+      color: #7a31f0ff;
+    }
+    .i {
+      color: $red;
+    }
+    .l {
+      color: #1a5ad8;
+    }
+  }
+  .details {
+    width: 110%;
+    height: 180px;
+    background-color: $blackBk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+    .phone,
+    .email,
+    .location {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      font-size: 10px;
+      width: 100%;
+      border-bottom: 1px solid $grey;
+      i{
+        width: 35px;
+        height: 30px;
+        text-align: center;
+      }
+    }
+    i {
+      font-size: 20px;
+      background-color: $black;
+      padding: 6px;
+      margin-left: 5px;
+      border-radius: 5px;
+    }
+    .phone i {
+      color: $red;
+    }
+    .email i {
+      color: #05d6ac;
+    }
+    .location i {
+      color: #e9b9fd;
+    
+    }
+    .sp {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+    }
+  }
+  button {
+    background-color: $red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 80%;
+    margin-top: 20px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 819px) {
+  .info {
+    #i {
+      left: 20px;
+    }
+    width: 90%;
+    height: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* ==== E info ==== */
